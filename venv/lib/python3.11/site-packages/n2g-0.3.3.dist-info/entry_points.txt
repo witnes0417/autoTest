@@ -1,0 +1,3 @@
+[console_scripts]
+n2g=N2G.utils.N2G_cli:cli_tool
+

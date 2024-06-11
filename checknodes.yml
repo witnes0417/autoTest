@@ -1,0 +1,29 @@
+FH状态:
+  logs:
+  mml:
+    - "DSP FHLIST: ;":
+      - SOFTWAREVERSION: variable        
+      - STATUS: NORMAL        
+
+小区状态:
+  logs:
+  mml:
+    - "DSP CELL0STATUS: ;":
+      - CELLSTATUS: ACTIVATED
+    - "DSP CELL1STATUS: ;":
+      - CELLSTATUS: ACTIVATED
+
+RU状态:
+  logs:
+  mml:
+    - "DSP RRULIST: ;":
+      - SOFTWAREVERSION: variable 
+      - STATUS: NORMAL   
+
+ONU状态:
+  logs:
+  mml:
+    - "DSP ONULIST: ;":
+      - SOFTWAREVERSION: variable 
+      - STATUS: NORMAL 
+
