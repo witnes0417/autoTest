@@ -1,31 +1,62 @@
+import xml.etree.ElementTree as ET
 import drawpyo
-from drawpyo.diagram_types import TreeDiagram
 
-tree = TreeDiagram(
-    file_path = './Output',
-    file_name = 'test.drawio',
-)
-
-from drawpyo.diagram_types import NodeObject
-
-from N2G import drawio_diagram
-import drawpyo
 
 # 读取并解析 Draw.io 文件
 file_path = "Output/test1.drawio"
-converter = drawio_diagram()
-converter.from_file(file_path)
+# converter = drawio_diagram()
+# converter.from_file(file_path)
 
 # 创建 Drawpyo 文件和页面对象
 diagram_file = drawpyo.File()
 page = drawpyo.Page(file=diagram_file)
-
-# 获取解析后的页面数据
-parsed_data = converter.drawing
-
 # 创建一个字典以便映射节点ID到 Drawpyo 对象
 id_to_obj = {}
 
+# 提取id/ mxcell 分类
+self.drawing = ET.fromstring(text_data)
+    # extract diagrams, nodes, edges IDs
+for diagram_elem in self.drawing.findall("./diagram"):
+    diagram_root = diagram_elem.find("./mxGraphModel/root")
+
+    self.nodes_ids.setdefault(diagram_elem.attrib["id"], [])
+    self.edges_ids.setdefault(diagram_elem.attrib["id"], [])
+
+    # envelop all mxCell node and edge tags into <object> tags
+    for mxcell in diagram_root.findall("./mxCell"):
+        # check if this is an edge
+        if mxcell.attrib.get("edge") == "1":
+            diagram_root.remove(mxcell)
+            # envelop mxCell into <object> tag
+            object_tag = ET.fromstring(
+                self.drawio_object_xml.format(id=mxcell.attrib.pop("id"))
+            )
+            object_tag.append(mxcell)
+            diagram_root.append(object_tag)
+        # check if this is a node
+        elif mxcell.attrib.get("vertex") == "1" and mxcell.attrib.get("parent") == "1":
+            diagram_root.remove(mxcell)
+            # envelop mxCell into <object> tag
+            object_tag = ET.fromstring(
+                self.drawio_object_xml.format(id=mxcell.attrib.pop("id"))
+            )
+            object_tag.append(mxcell)
+            if mxcell.attrib.get("value"):
+                object_tag.attrib["label"] = mxcell.attrib.pop("value")
+            diagram_root.append(object_tag)
+
+    # iterate over object/mxCell to extract nodes and edges
+    for object_tag in diagram_root.findall("./object"):
+        object_id = object_tag.attrib["id"]
+        mxCell = object_tag.find("./mxCell")
+        # check if this is an edge
+        if "source" in mxCell.attrib and "target" in mxCell.attrib:
+            self.edges_ids[diagram_elem.attrib["id"]].append(object_id)
+        else:
+            self.nodes_ids[diagram_elem.attrib["id"]].append(object_id)
+
+
+# mxcell 解析到 obj
 # 提取并添加节点
 for diagram_elem in parsed_data.findall("./diagram"):
     diagram_root = diagram_elem.find("./mxGraphModel/root")
@@ -33,7 +64,7 @@ for diagram_elem in parsed_data.findall("./diagram"):
     for object_tag in diagram_root.findall("./object"):
         object_id = object_tag.attrib["id"]
         mxCell = object_tag.find("./mxCell")
-        
+
         # 如果是节点
         if "vertex" in mxCell.attrib and mxCell.attrib.get("vertex") == "1":
             mxGeometry = mxCell.find("./mxGeometry")
@@ -43,7 +74,7 @@ for diagram_elem in parsed_data.findall("./diagram"):
             height = int(mxGeometry.attrib.get("height", 80))
             value = object_tag.attrib.get("label", "")
             style = mxCell.attrib.get("style", "")
-            
+
             obj = drawpyo.diagram.Object(page=page)
             obj.geometry.x = x
             obj.geometry.y = y
@@ -59,7 +90,7 @@ for diagram_elem in parsed_data.findall("./diagram"):
 
     for object_tag in diagram_root.findall("./object"):
         mxCell = object_tag.find("./mxCell")
-        
+
         # 如果是边
         if "source" in mxCell.attrib and "target" in mxCell.attrib:
             source_id = mxCell.attrib["source"]
@@ -68,14 +99,22 @@ for diagram_elem in parsed_data.findall("./diagram"):
             target_obj = id_to_obj[target_id]
             label = mxCell.attrib.get("value", "")
             style = mxCell.attrib.get("style", "")
-            edge_obj = drawpyo.diagram.Edge(source=source_obj, target=target_obj, page=page, label=label)
+            edge_obj = drawpyo.diagram.Edge(
+                source=source_obj, target=target_obj, page=page, label=label
+            )
             page.add_object(edge_obj)
 
 # 保存文件
 diagram_file.file_path = "Output/diagram.drawio"
 diagram_file.write()
 
-
+# from drawpyo.diagram_types import TreeDiagram
+# from drawpyo.diagram_types import NodeObject
+ 
+# tree = TreeDiagram(
+#     file_path="./Output",
+#     file_name="test.drawio",
+# )
 
 # # 创建文件对象
 # file = drawpyo.File()
@@ -134,7 +173,7 @@ diagram_file.write()
 # # Conical Burrs
 # conical = NodeObject(tree=tree, value="Conical Burrs", parent=burr_grinders)
 # elec_conical = NodeObject(tree=tree, value="Electric", parent=conical)
-# manual_conical = NodeObject(tree=tree, value="Manual", parent=conical) 
+# manual_conical = NodeObject(tree=tree, value="Manual", parent=conical)
 
 # tree.auto_layout()
 # tree.write()
