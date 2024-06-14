@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="gb2312"?>
+<errors>
+	<error des_cn="ERR_PARA_NOK" des_en="ERR_PARA_NOK" errno="0x10000001"/>
+	<error des_cn="内存分配失败" des_en="Memory allocation failed" errno="0x10000002"/>
+	<error des_cn="语法错误" des_en="Syntax error" errno="0x10000003"/>
+	<error des_cn="ERR_SQL_EXE_FAILED" des_en="ERR_SQL_EXE_FAILED" errno="0x10000004"/>
+	<error des_cn="ERR_FILE_MISSING" des_en="ERR_FILE_MISSING" errno="0x10000005"/>
+	<error des_cn="ERR_OUT_OF_RANGE" des_en="ERR_OUT_OF_RANGE" errno="0x10000006"/>
+	<error des_cn="ERR_PARA_EMPTY" des_en="ERR_PARA_EMPTY" errno="0x10000007"/>
+	<error des_cn="ERR_ACTION_DENIED" des_en="ERR_ACTION_DENIED" errno="0x10000008"/>
+	<error des_cn="ERR_SOCKET_FAILED" des_en="ERR_SOCKET_FAILED" errno="0x10000009"/>
+	<error des_cn="ERR_BIND_FAILED" des_en="ERR_BIND_FAILED" errno="0x1000000a"/>
+	<error des_cn="ERR_RECVFROM_FAILED" des_en="ERR_RECVFROM_FAILED" errno="0x1000000b"/>
+	<error des_cn="ERR_SENDTO_FAILED" des_en="ERR_SENDTO_FAILED" errno="0x1000000c"/>
+	<error des_cn="ERR_SELECT_TIMEOUT" des_en="ERR_SELECT_TIMEOUT" errno="0x1000000d"/>
+	<error des_cn="ERR_SELECT_FAILED" des_en="ERR_SELECT_FAILED" errno="0x1000000e"/>
+	<error des_cn="ERR_PERR_SHUTDOWN" des_en="ERR_PERR_SHUTDOWN" errno="0x1000000f"/>
+	<error des_cn="ERR_PARA_FMT_INCORRECT" des_en="ERR_PARA_FMT_INCORRECT" errno="0x10000010"/>
+	<error des_cn="非多实例不能进行添加或删除操作" des_en="Non-multiple instance cannot be added or deleted" errno="0x10000011"/>
+	<error des_cn="ERR_NOT_DO_OBJ" des_en="ERR_NOT_DO_OBJ" errno="0x10000012"/>
+	<error des_cn="未指定key参数" des_en="No key parameter is specified" errno="0x10000013"/>
+	<error des_cn="key参数不完整" des_en="All key parameters must be specified" errno="0x10000014"/>
+	<error des_cn="已达最大实例个数" des_en="Maximum number of instances has been reached" errno="0x10000015"/>
+	<error des_cn="实例已存在" des_en="Instance already exists" errno="0x10000016"/>
+	<error des_cn="实例不存在" des_en="Instance does't exist" errno="0x10000017"/>
+	<error des_cn="未指定非key参数" des_en="No non-key parameter specified" errno="0x10000018"/>
+	<error des_cn="ERR_CREATE_THD_FAILED" des_en="ERR_CREATE_THD_FAILED" errno="0x10000019"/>
+	<error des_cn="ERR_SETSOCKOPT_FAILED" des_en="ERR_SETSOCKOPT_FAILED" errno="0x1000001a"/>
+	<error des_cn="ERR_CHK_SERVER_NOK" des_en="ERR_CHK_SERVER_NOK" errno="0x1000001b"/>
+	<error des_cn="ERR_CREATE_KEY_FAILED" des_en="ERR_CREATE_KEY_FAILED" errno="0x1000001c"/>
+	<error des_cn="ERR_MID_INVALID" des_en="ERR_MID_INVALID" errno="0x1000001d"/>
+	<error des_cn="ERR_MSGID_INVALID" des_en="ERR_MSGID_INVALID" errno="0x1000001e"/>
+	<error des_cn="ERR_MML_UNSUPPORT" des_en="ERR_MML_UNSUPPORT" errno="0x1000001f"/>
+	<error des_cn="ERR_PLOBJ_UNINITIALIZED" des_en="ERR_PLOBJ_UNINITIALIZED" errno="0x10000020"/>
+	<error des_cn="ERR_OBJ_NUM_GT_ONE" des_en="ERR_OBJ_NUM_GT_ONE" errno="0x10000021"/>
+	<error des_cn="ERR_TMR_CREATE_FAILED" des_en="ERR_TMR_CREATE_FAILED" errno="0x10000022"/>
+	<error des_cn="ERR_TMR_READ_FAILED" des_en="ERR_TMR_READ_FAILED" errno="0x10000023"/>
+	<error des_cn="ERR_TMR_SETTIME_FAILED" des_en="ERR_TMR_SETTIME_FAILED" errno="0x10000024"/>
+	<error des_cn="ERR_TRANS_NOT_FOUND" des_en="ERR_TRANS_NOT_FOUND" errno="0x10000025"/>
+	<error des_cn="事务超时" des_en="Transaction timeout" errno="0x10000026"/>
+	<error des_cn="命令不存在" des_en="Command does't exist" errno="0x10000027"/>
+	<error des_cn="对象名不存在" des_en="Object name does't exist" errno="0x10000028"/>
+	<error des_cn="对象ID不存在" des_en="Object ID does't exist" errno="0x10000029"/>
+	<error des_cn="参数名不存在" des_en="Parameter name does't exist" errno="0x1000002a"/>
+	<error des_cn="参数ID不存在" des_en="Parameter ID does't exist" errno="0x1000002b"/>
+	<error des_cn="规则ID不存在" des_en="Rule ID does't exist" errno="0x1000002c"/>
+	<error des_cn="枚举名不存在" des_en="Enum name does't exist" errno="0x1000002d"/>
+	<error des_cn="枚举值不存在" des_en="Enum value does't exist" errno="0x1000002e"/>
+	<error des_cn="BITMAP名不存在" des_en="Bitmap name does't exist" errno="0x1000002f"/>
+	<error des_cn="BITMAP值不存在" des_en="Bitmap value does't exist" errno="0x10000030"/>
+	<error des_cn="连接ftp服务器失败" des_en="Failed to connect FTP server" errno="0x10000031"/>
+	<error des_cn="登录ftp服务器失败" des_en="Failed to login to FTP server" errno="0x10000032"/>
+	<error des_cn="获取远程文件大小失败" des_en="Failed to obtain remote file size" errno="0x10000033"/>
+	<error des_cn="打开远程文件失败" des_en="Failed to open remote file" errno="0x10000034"/>
+	<error des_cn="读远程文件失败" des_en="Failed to read remote file" errno="0x10000035"/>
+	<error des_cn="写远程文件失败" des_en="Failed to write remote file" errno="0x10000036"/>
+	<error des_cn="打开文件失败" des_en="Failed to open file" errno="0x10000037"/>
+	<error des_cn="获取文件状态信息失败" des_en="Failed to get file status information" errno="0x10000038"/>
+	<error des_cn="系统繁忙" des_en="System is busy" errno="0x10000039"/>
+	<error des_cn="规则非法，拒绝执行" des_en="Rule is illegal and refuse to execute" errno="0x1000003a"/>
+	<error des_cn="规则中变量值缺失" des_en="The value of variables in the rule are missing" errno="0x1000003b"/>
+	<error des_cn="规则中变量个数超出限制" des_en="The number of variables in the rule exceeds the limit" errno="0x1000003c"/>
+	<error des_cn="规则执行结果无效" des_en="The result of rule execution is invalid" errno="0x1000003d"/>
+	<error des_cn="编译正则表达式失败" des_en="Failed to compile a regular expression" errno="0x1000003e"/>
+	<error des_cn="ERR_FRM_MSG_FAILED" des_en="ERR_FRM_MSG_FAILED" errno="0x1000003f"/>
+	<error des_cn="ERR_FRM_TIMER_FAILED" des_en="ERR_FRM_TIMER_FAILED" errno="0x10000040"/>
+	<error des_cn="ERR_FRM_UDP_FAILED" des_en="ERR_FRM_UDP_FAILED" errno="0x10000041"/>
+	<error des_cn="ERR_LMTREQ_INVALID" des_en="ERR_LMTREQ_INVALID" errno="0x10000042"/>
+	<error des_cn="添加地址失败" des_en="Failed to add address" errno="0x10000043"/>
+	<error des_cn="分配有效的软件插槽失败" des_en="Failed to get valid slot" errno="0x10000044"/>
+	<error des_cn="软件版本安装到软件插槽失败" des_en="Failed to install slot" errno="0x10000045"/>
+	<error des_cn="激活软件插槽失败" des_en="Failed to activate slot" errno="0x10000046"/>
+	<error des_cn="下载文件失败" des_en="Failed to download file" errno="0x10000047"/>
+	<error des_cn="设备环境异常" des_en="Device environment abnormal" errno="0x10000048"/>
+	<error des_cn="文件损坏" des_en="File corruption" errno="0x10000049"/>
+	<error des_cn="不可用的软件版本文件" des_en="Unavailable software version file" errno="0x1000004a"/>
+	<error des_cn="IP地址格式错误" des_en="IP Address Format Error" errno="0x1000004b"/>
+	<error des_cn="IP掩码格式错误" des_en="IP Mask Format Error" errno="0x1000004c"/>
+	<error des_cn="无效的时间源优先级" des_en="Invalid Time Source Priority" errno="0x1000004d"/>
+	<error des_cn="物理链路故障" des_en="Physical link fault" errno="0x1000004e"/>
+	<error des_cn="时钟源相位不同步" des_en="Clock phase async" errno="0x1000004f"/>
+	<error des_cn="实例使用中" des_en="Instance in Using" errno="0x10000050"/>
+	<error des_cn="实例未启用" des_en="Instance not Enabled" errno="0x10000051"/>
+	<error des_cn="单板能力不支持该功能" des_en="Board ability not support" errno="0x10000052"/>
+	<error des_cn="BID值无效" des_en="Invalid BoardID" errno="0x10000053"/>
+</errors>

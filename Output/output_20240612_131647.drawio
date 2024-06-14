@@ -1,0 +1,43 @@
+<mxfile host="Drawpyo" modified="2024-06-12T13:16:47" agent="Python 3.11, Drawpyo 0.01" version="21.6.5" type="device">
+  <diagram name="Page-1" id="140514480127184">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="140514480381008" value="FH状态" style="whiteSpace=wrap;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="0" y="0" width="120" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514484819472" value="Node 2" style="whiteSpace=wrap;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="220" y="0" width="120" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514480393168" value="小区状态" style="whiteSpace=wrap;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="440" y="0" width="120" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514486790416" value="Node 4" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="0" y="130" width="120" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514480393296" value="FH状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514480402896" value="小区状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="400" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514480403856" value="RU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="0" y="260" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514480403152" value="ONU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="260" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="140514480401872" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="140514480381008" target="140514480393168" value="yes">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="140514480374480" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="140514480381008" target="140514484819472" value="no">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="140514480392208" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="140514484819472" target="140514486790416" value="yes">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

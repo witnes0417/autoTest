@@ -1,0 +1,7 @@
+Checking remote packages...
+Remote package list: 
+Matching package: 
+Package nrpackage-cpri not found on remote server.
+
+ssh: connect to host 172.168.100.38 port 22: Network is unreachable
+./env.sh: line 53: [: : integer expression expected

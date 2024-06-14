@@ -1,0 +1,38 @@
+更新:
+  shell: 
+    - $binpkg_dir/autoTest.sh upgrade --model=ecpri
+
+启动:
+  shell: 
+    - $binpkg_dir/autoTest.sh startup --model=ecpri
+
+FH状态:
+  logs:
+  mml:
+    - "DSP FHLIST: ;":
+      - SOFTWAREVERSION: $VERSION
+      - STATUS: NORMAL        
+
+RU状态:
+  logs:
+  mml:
+    - "DSP RRULIST: ;":
+      - SOFTWAREVERSION: $VERSION
+      - STATUS: NORMAL   
+
+ONU状态:
+  logs:
+  mml:
+    - "DSP ONULIST: ;":
+      - SOFTWAREVERSION: $VERSION 
+      - STATUS: NORMAL 
+
+小区状态:
+  logs:
+    - $CURDIR/xx.log:
+      - checkvar1
+  mml:
+    - "DSP CELL0STATUS: ;":
+      - CELLSTATUS: ACTIVATED
+    - "DSP CELL1STATUS: ;":
+      - CELLSTATUS: ACTIVATED

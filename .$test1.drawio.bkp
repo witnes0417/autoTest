@@ -1,0 +1,28 @@
+<mxfile host="Drawpyo" modified="2024-06-13T15:30:06" agent="Python 3.11, Drawpyo 0.01" version="21.6.5" type="device">
+  <diagram name="nodelist" id="139818938150480">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="139818938088912" value="更新" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="0" y="0" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139818941574928" value="启动" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="0" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139818930651472" value="FH状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="400" y="0" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139818930654608" value="RU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="0" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139818930653392" value="ONU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139818930665360" value="小区状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="400" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,75 @@
+<mxfile host="Drawpyo" modified="2024-06-14T10:03:55" agent="Python 3.11, Drawpyo 0.01" version="21.6.5" type="device">
+  <diagram name="nodelist" id="139727465205712">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="139727465228560" value="更新" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="0" y="0" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727475083472" value="启动" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="0" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465229008" value="FH状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="400" y="0" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465231760" value="RU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="0" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465232656" value="ONU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465228432" value="小区状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="400" y="130" width="100" height="80" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="plan" id="139727465148752">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="2" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="139727465223376" value="启动" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="610" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465218896" value="ONU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="780" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465205200" value="更新" style="whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="100" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465252240" value="启动" style="whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="270" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465228496" value="FH状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="400" y="0" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465259536" value="ONU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="640" y="100" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465225616" value="小区状态" style="whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="480" y="270" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465228816" value="RU状态" style="whiteSpace=wrap;rounded=0;dashed=0;" vertex="1" parent="1">
+  <mxGeometry x="200" y="440" width="100" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="139727465229584" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;" edge="1" parent="1" source="139727465252240" target="139727465225616" value="y">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139727465216848" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="139727465205200" target="139727465252240" value="y">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139727465250960" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="139727465252240" target="139727465228816" value="y">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139727465262608" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="139727465223376" target="139727465218896" value="y">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139727465260944" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="139727465228816" target="139727465223376" value="y">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
